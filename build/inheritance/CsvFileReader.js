@@ -10,13 +10,14 @@ class CsvFileReader {
         this.fileName = fileName;
         this.data = [];
     }
-    read() {
+    readFile() {
         this.data = fs_1.default
             .readFileSync(this.fileName, {
             encoding: 'utf8',
         })
             .split('\n')
-            .map((row) => row.split(','));
+            .map((row) => row.split(','))
+            .map(this.mapRow);
     }
 }
 exports.CsvFileReader = CsvFileReader;
