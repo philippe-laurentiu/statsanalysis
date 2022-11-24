@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/philippe-laurentiu/statsanalysis#readme",
   "dependencies": {
+    "@types/node": "^18.11.9",
     "concurrently": "^7.6.0",
     "nodemon": "^2.0.20"
   }
