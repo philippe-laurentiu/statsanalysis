@@ -1,16 +1,5 @@
-import { MatchResoult } from './MatchResoult'
 import { dateStringToDate } from './utils'
-
-export type Matchtype = [
-  Date,
-  string,
-  string,
-  number,
-  number,
-  MatchResoult,
-  string
-]
-
+import { Matchtype } from './MatchData'
 interface DataReader {
   data: string[][]
   read(): void
